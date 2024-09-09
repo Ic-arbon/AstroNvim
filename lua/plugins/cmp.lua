@@ -1,3 +1,5 @@
+if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+
 return { -- override nvim-cmp plugin
   "hrsh7th/nvim-cmp",
   -- dependencies = {
@@ -10,13 +12,13 @@ return { -- override nvim-cmp plugin
     local cmp = require "cmp"
     -- modify the sources part of the options table
     opts.sources = cmp.config.sources {
-      { name = "cmp-matlab" },
-      { name = "cmp-octave" },
       { name = "nvim_lsp", priority = 1000 },
       { name = "luasnip", priority = 750 },
       { name = "buffer", priority = 500 },
       { name = "path", priority = 250 },
-      { name = "emoji", priority = 700 }, -- add new source
+      -- { name = "emoji", priority = 700 }, -- add new source
+      { name = "cmp-matlab" },
+      { name = "cmp-octave" },
     }
   end,
 }
