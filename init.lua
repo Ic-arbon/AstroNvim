@@ -15,5 +15,8 @@ if not pcall(require, "lazy") then
   vim.cmd.quit()
 end
 
+-- 设置文件编码检测顺序
+vim.opt.fileencodings = "utf-8,ucs-bom,gb18030,gbk,gb2312,cp936"
+
 require "lazy_setup"
 require "polish"
