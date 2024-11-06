@@ -1,5 +1,6 @@
 return {
   { import = "astrocommunity.pack.cpp" },
+  -- 添加覆盖配置
   {
     "AstroNvim/astrolsp",
     optional = true,
