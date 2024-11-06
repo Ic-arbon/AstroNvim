@@ -10,6 +10,7 @@ return {
   -- { import = "astrocommunity.completion.copilot-cmp" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.cpp" },
+  { import = "astrocommunity.pack.cmake" },
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.java" },
   { import = "astrocommunity.pack.verilog" },
